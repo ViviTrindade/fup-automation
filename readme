@@ -1,0 +1,122 @@
+# 📊 Automação de Follow-up (FUP) de Cotações
+
+Esse projeto surgiu a partir de uma necessidade bem prática do dia a dia.
+
+O processo de follow-up de cotações era feito manualmente, com bastante troca de e-mails, controles paralelos e pouca padronização. Isso acabava gerando retrabalho e dificuldade de organização.
+
+A partir disso, desenvolvi um script em Python para automatizar esse fluxo e trazer mais consistência.
+
+---
+
+## 🚀 O que o script faz
+
+A partir de arquivos CSV, o sistema:
+
+- lê e organiza os dados de cotações
+- cruza informações com a base de hierarquia
+- agrupa os dados por corretor e região
+- aplica filtros de status e regras de negócio
+- gera automaticamente e-mails de follow-up em HTML
+- cria arquivos de controle para acompanhamento das cotações
+- identifica casos com pendências (ex: ausência de e-mail ou dados incompletos)
+
+---
+
+## 💡 Contexto do problema
+
+Antes da automação, o processo envolvia:
+
+- abrir planilhas manualmente
+- filtrar informações
+- montar e-mails um a um
+- controlar o que já foi enviado em arquivos separados
+
+Além de consumir tempo, isso aumentava a chance de erro e perda de informação.
+
+O objetivo do projeto foi justamente reduzir esse esforço manual e deixar o processo mais organizado.
+
+---
+
+## 🧠 Principais desafios
+
+O maior desafio não foi exatamente escrever o código, mas trabalhar com os dados do jeito que eles vinham.
+
+Durante o desenvolvimento, precisei lidar com:
+
+- arquivos CSV gerados pelo Excel com formatações diferentes  
+- problemas de encoding (principalmente acentuação quebrada)  
+- nomes de colunas inconsistentes  
+- dados incompletos ou desalinhados  
+
+Esse tipo de ajuste acabou sendo essencial para fazer a automação funcionar de forma confiável.
+
+---
+
+## 🤖 Uso de IA
+
+Utilizei ferramentas de IA como apoio durante o desenvolvimento, principalmente para:
+
+- entender alguns erros
+- explorar alternativas de solução
+- revisar trechos de código
+
+A lógica do processo e as regras de negócio foram baseadas na necessidade real da atividade.
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+- Python
+- Manipulação de arquivos CSV (biblioteca padrão)
+- Geração de HTML
+
+---
+
+## 📂 Estrutura do projeto
+
+
+fup-automation/ │ ├── app.py ├── README.md └── output/ (gerado automaticamente)
+
+---
+
+## ▶️ Como executar
+
+1. Colocar os arquivos CSV na pasta:
+
+C:\fup
+
+2. Executar o script:
+
+python app.py
+
+3. Os arquivos serão gerados automaticamente em:
+
+output/
+
+---
+
+## ⚠️ Dados
+
+Por questões de segurança corporativa, os dados originais utilizados não estão incluídos neste repositório.
+
+Para testes, é possível utilizar arquivos fictícios, mantendo a mesma estrutura de colunas esperada pelo script.
+
+---
+
+## 📌 Observação
+
+Esse projeto foi desenvolvido a partir de um cenário real de trabalho e reflete uma situação comum de processo manual que pode ser simplificado com automação.
+
+---
+
+## 💼 Relação com a área de dados
+
+Esse trabalho envolve pontos importantes para quem está migrando ou atuando com dados:
+
+- leitura e tratamento de dados estruturados  
+- limpeza e padronização de informações  
+- organização e transformação de dados  
+- aplicação de regras de negócio  
+- geração de saídas automatizadas  
+
+Mais do que o código em si, foi um exercício de estruturar dados para apoiar uma necessidade real.
